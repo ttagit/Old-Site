@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,20 +60,20 @@
     <!-- Full Width Image Header -->
     <header class="header-image">
         <div class="headline">
-            	<div class="container">
-		<header>
-		<h1 id="fittext1">TTAGIT</h1>
-	
-		</header>
-	</div>
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
- 	<script src="jquery.fittext.js"></script>
-	<script type="text/javascript">
-		$("#fittext3").fitText();
-		$("#fittext2").fitText(1.2);
-		$("#fittext1").fitText(1.1, { minFontSize: '150px', maxFontSize: '300px' });
-	</script>
+            <div class="container">
+                <div>
+   <header>
+            <h1 id="responsive-header">TTAGIT</h1>
+        </header>
+        
+
+        <script src="js/jquery-1.7.2.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script>
+            //call fitText() function for the element you want to be fluid
+            $("#responsive-header").fitText();
+            //Font-size = 1/10th of the element's width
+        </script>
 </div>
             </div>
         </div>
