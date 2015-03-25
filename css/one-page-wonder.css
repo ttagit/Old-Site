@@ -20,20 +20,47 @@ body {
 }
 
 .headline {
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .headline h1 {
-    font-size: 130px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+			text-align: center;
+			color:#fff;
+			font: 220px/2 "Impact";
+			text-transform: uppercase;
+			display: block;
+			text-shadow:#253e45 -1px 1px 0,
+			#253e45 -2px 2px 0,
+			#d45848 -3px 3px 0,
+			#d45848 -4px 4px 0;
+			margin: 5% auto 5%;
 }
 
 .headline h2 {
-    font-size: 77px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+			text-align: center;
+			color:#fff;
+			font: 220px/2 "Impact";
+			text-transform: uppercase;
+			display: block;
+			text-shadow:#253e45 -1px 1px 0,
+			#253e45 -2px 2px 0,
+			#d45848 -3px 3px 0,
+			#d45848 -4px 4px 0;
+			margin: 5% auto 5%;
 }
+h3 {
+			background: rgba(0,0,0,0.2);
+			text-align: center;
+			color:#fff;
+			font: 220px/2 "Impact";
+			text-transform: uppercase;
+			display: block;
+			text-shadow:#253e45 -1px 1px 0,
+			#253e45 -2px 2px 0,
+			#d45848 -3px 3px 0,
+			#d45848 -4px 4px 0;
+			margin: 5% auto 5%;
+		}
 
 .featurette-divider {
     margin: 80px 0;
