@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,16 +61,20 @@
     <!-- Full Width Image Header -->
     <header class="header-image">
         <div class="headline">
-            <div class="container">
-                <div>
-   <table width="100%" height="100%" align="left" valign="top">
-   <tr><td width="18%">
-      <img src="images/ttagit-logo.png" alt="ttagit social networks" />
-   </td>
-     <td width="82%"><h2>Interact with relevant tweets over any URL, turn any website into Twitter sound board</h2>
-	 
-   </tr>
-   </table>
+            	<div class="container">
+		<header>
+		<h1 id="fittext1">TTAGIT</h1>
+	
+		</header>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ 	<script src="jquery.fittext.js"></script>
+	<script type="text/javascript">
+		$("#fittext3").fitText();
+		$("#fittext2").fitText(1.2);
+		$("#fittext1").fitText(1.1, { minFontSize: '150px', maxFontSize: '300px' });
+	</script>
 </div>
             </div>
         </div>
