@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Denis Samardjiev" />
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<title>TTAGIT Social Networks inc.| Put your mark on everything</title>
+
+	<!-- Royal Preloader CSS -->
+	<link rel="stylesheet" type="text/css" href="css/royal_preloader.css">
+
+	<!-- jQuery Files -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<!-- Royal Preloader -->
+	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+	<script type="text/javascript">
+		Royal_Preloader.config({
+		    mode:       	'number',
+		    showProgress: 	false,
+		    background: 	'#ffffff'
+		});
+	</script>
+
+	<!-- Stylesheets -->
+
+  	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" title="main-css">
+	<link href="css/bootstrap-social.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet" >
+	<link href="css/jquery.snippet.css" rel="stylesheet">
+	<link href="css/buttons.css" rel="stylesheet">
+	<!-- Icon Fonts -->
+	<link href='css/ionicons.min.css' rel='stylesheet' type='text/css'>
+	<link href='css/font-awesome.css' rel='stylesheet' type='text/css'>
+
+	<!-- Magnific Popup -->
+	<link href='css/magnific-popup.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="royal_preloader scrollreveal">
+
+	<div id="royal_preloader"></div>
+
+	<!-- Begin Boxed or Fullwidth Layout -->
+	<div id="bg-boxed">
+	    <div class="boxed">
+
+			<!-- Begin Header -->
+			<header>
+
+				<!-- Begin Top Bar -->
+				<div class="top-bar">
+					<div class="container container-header">
+						<div class="row top-bar-row">
+							<!-- Address and Phone -->
+							<div class='col-xs-6 col-md-6 col-lg-6 text-left stockquote'>
+								<div class="stockTick">
+								<script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+								<script>
+								$(document).ready(function(){var stock = 'IGD.V';
+								var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + stock + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
+								$.getJSON(url,function(data){
+								var stockInfo = data[0];
+								var stockString = '<b>Symbol:</b> ' + data.query.results.quote.symbol + ' <b>Last:</b> ' + data.query.results.quote.LastTradePriceOnly + ' <b>Bid:</b> ' + data.query.results.quote.Bid + ' <b>Ask:</b> ' + data.query.results.quote.Ask + ' <b>Volume:</b> ' + data.query.results.quote.Volume;
+								var result = stockString.fontcolor("green");
+								$('.stockTick').html('<h4>' + stockString + '</h4>');
+								                });
+								        })
+								        </script>
+							</div>
+							</div>
+							<!-- Social Buttons -->
+							<div class="col-sm-5 text-right topmenu-holder">
+				                <ul class="topbar-list list-inline">
+
+					                <li>
+							            <a class="btn btn-social-icon btn-rw btn-primary btn-xs">
+											<i class="fa fa-twitter"></i>
+										</a>
+										<a class="btn btn-social-icon btn-rw btn-primary btn-xs">
+											<i class="fa fa-google"></i>
+										</a>
+										<a class="btn btn-social-icon btn-rw btn-primary btn-xs">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div><!--/row -->
+					</div><!--/container header -->
+				</div><!--/top bar -->
+				<!-- End Top Bar -->
+<!-- Begin Navigation -->
+				<div class="navbar">
+					<div class="container container-header">
+						<div class="navbar-header">
+							<!-- Brand -->
+							<a href="index.html" class="navbar-brand">
+								<!-- <div class="css-logo"></div> -->
+								<img src="images/logo.png" class="raleway-logo" alt="ttagit social networks inc.">
+							</a>
+							<!-- Mobile Navigation -->
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					            <span class="sr-only">Toggle navigation</span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+							</button>
+						</div><!-- /navbar header -->
+
+						<!-- Main Navigation -->
+						<nav class="navbar-collapse collapse navHeaderCollapse" role="navigation">
+							<ul class="nav navbar-nav navbar-right">
+									<li><a href="http://www.ttagit.com/prelaunch">Home</a></li>
+											<li><a href="http://intigold.com/news/">News Releases</a></li>
+
+								<li><a href="pages-contact-1.html">Contact</a></li>
+								<li class="dropdown">
+			                    	<a href="#" class="dropdown-toggle dropdown-form-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+			                        <ul class="dropdown-menu dropdown-menu-user">
+			                            <li id="dropdownForm">
+			                            	<div class="dropdown-form">
+			                                	<form class="form-default form-inline p15">
+			                                        <div class="input-group">
+			                                            <input type="text" class="form-control search-input" placeholder="Search...">
+			                                            <span class="input-group-btn">
+			                                                <button class="btn btn-rw btn-primary search-btn" type="button">Go!</button>
+			                                            </span>
+			                                        </div><!-- /input group -->
+			                                    </form><!-- /searh form -->
+			                                </div><!-- /dropdown form -->
+			                            </li><!-- /dropdownForm list item -->
+			                        </ul><!-- /search dropdown -->
+			                	</li><!-- /search navbar list item -->
+							</ul><!-- /navbar right -->
+						</nav><!-- /nav -->
+
+					</div><!-- /container header -->
+				</div><!-- /navbar -->
+				<!-- End Navigation -->
+
+			</header><!-- /header -->
+			<!-- End Header -->
+
+			<!-- Begin Map -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 no-padding" style="margin-bottom: -7px;">
+						<iframe style="border: 0px none; border-color:#fff; width:100%;" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.55849489116!2d-123.1153834!3d49.2847626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671789ef89893%3A0xfe062f9ee85085db!2s700+W+Pender+St%2C+Vancouver%2C+BC+V6C+1G8!5e0!3m2!1sen!2sca!4v1436727126312"></iframe>
+					</div>
+				</div>
+			</div>
+			<!-- End Map -->
+
+			<!-- Begin Contact -->
+			<section class="mt40 mb40">
+				<div class="container">
+
+					<!-- Form + Sidebar -->
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="heading mb20"><h4><span class="ion-android-mail mr15"></span>Send us a Message</h4></div>
+							<p class="mb20">TTagit Social Networks would love to hear from you, fill out the form below and a representative will contact you.</p>
+							<form role="form">
+			                    <div class="form-group">
+			                        <input type="email" placeholder="Name" class="form-control" id="InputName">
+			                    </div>
+			                    <div class="form-group">
+			                        <input type="email" placeholder="Email Address" class="form-control" id="InputEmail1">
+			                    </div>
+			                    <div class="form-group">
+			                        <textarea class="form-control" placeholder="Message" id="InputMessage" rows="7"></textarea>
+			                    </div>
+			                    <button type="submit" class="btn btn-rw btn-primary">Submit</button>
+			                </form>
+						</div>
+						<div class="col-sm-4 mt30-xs">
+							<div class="content-box content-box-primary mb30">
+						        <span class="ion-ios7-telephone-outline text-white border-white bordered-icon-static-sm mb10"></span>
+						        <h2 class="text-white no-margin">604 669 4677</h2>
+						    </div>
+							<div class="panel panel-primary no-margin">
+							    <div class="panel-heading">
+							        <h3 class="panel-title"><span class="ion-android-system-home"></span> Information</h3>
+							    </div>
+							    <div class="panel-body">
+										<div id="" class="vcard">
+										 <a class="url fn n" href="http://ttagit.com">  <span class="given-name"></span>
+										  <span class="additional-name"></span>
+										  <span class="family-name"></span>
+										</a>
+										 <div class="org">TTAGIT Social Networks Inc.</div>
+										 <a class="email" href="mailto:cathyforhane@gmail.com">cathyforhane@gmail.com</a>
+										 <div class="adr">
+										  <div class="street-address">304-700 Pender St W</div>
+										  <span class="locality">Vancouver</span>
+										,
+										  <span class="region">British Columbia</span>
+										,
+										  <span class="postal-code">V6C 1G8</span>
+
+										  <span class="country-name">Canada</span>
+
+										 </div>
+										 <div class="tel">+1 604 669 4677</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+				</div><!-- /container -->
+			</section><!-- /section -->
+			<!-- End Contact -->
+
+			<!-- Begin Footer -->
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<!-- About -->
+						<div class="col-sm-3">
+							<div class="heading-footer"><h4>Get Updates</h4></div>
+							<form action="//formspree.io/gradyflinn@gmail.com"
+      method="POST">
+    <input type="text" Value="Your Name" name="name"><br>
+    <input type="email" Value="Your Email" name="_replyto">
+    <input type="submit" value="Send">
+</form>
+						</div>
+
+						<!-- Social -->
+						<div class="col-sm-3 mg25-xs">
+							<div class="heading-footer"><h4>Social Networks</h4></div>
+							<div class="col-xs-2 recent-work-padding">
+							<a href="https://www.facebook.com/TTAGIT" class="">
+									<img src="images/facebook.png" alt="" class="thumbnail img-responsive">
+								</a>
+								</div>
+
+								<div class="col-xs-2 recent-work-padding">
+								<a href="https://twitter.com/ttagit2" class="">
+										<img src="images/twitter.png" alt="Connect With Twitter" class="thumbnail img-responsive">
+									</a>
+									</div>
+
+									<div class="col-xs-2 recent-work-padding">
+									<a href="https://plus.google.com/110453260789347404118/posts" class="">
+											<img src="images/googleplus.png" alt="Connect With Google Plus" class="thumbnail img-responsive">
+										</a>
+										</div>
+
+
+						</div>
+
+						<!-- Contact -->
+						<div class="col-sm-3 mg25-xs">
+							<div class="heading-footer"><h4>Contact us</h4></div>
+
+							<p><span class="ion-home footer-info-icons"></span><small class="address">304-700 Pender St W, Vancouver, BC,</small></p>
+								<p><span class="ion-home footer-info-icons"></span><small class="address">Canada, V6C 1G8</small></p>
+							<p><span class="ion-email footer-info-icons"></span><small class="address"><a href="mailto:cathyforhane@gmail.com">cathyforhane@gmail.com</a></small></p>
+
+						</div>
+
+						<!-- Recent Work -->
+						<div class="col-sm-3 hidden-xs">
+							<div class="heading-footer"><h4>TTagit Downloads</h4></div>
+							<div class="col-xs-3 recent-work-padding">
+								<a href="https://itunes.apple.com/ca/app/ttagit-social-networks-inc/id974194216?mt=8" class="thumbnail image-zoom-link">
+							      <img src="images/applelogo.png" alt="Download for iOS">
+							    </a>
+							</div>
+							<div class="col-xs-3 recent-work-padding">
+								<a href="https://chrome.google.com/webstore/detail/ttagit/ijabkockaflfmmcfcpfacclaagfiippe" class="thumbnail image-zoom-link">
+							      <img src="images/chromelogo.png" alt="Download for Google Chrome" class="thumbnail img-responsive">
+							    </a>
+							</div>
+							<div class="col-xs-3 recent-work-padding">
+								<a href="https://ttagit.org/safari/ttagit.safariextz" class="thumbnail image-zoom-link">
+							      <img src="images/safaributton.png" alt="Download for Safari Desktop" class="thumbnail img-responsive">
+							    </a>
+							</div>
+						</div>
+					</div><!-- /row -->
+
+					<!-- Copyright -->
+					<div class="row">
+						<hr class="dark-hr">
+						<div class="col-sm-11 col-xs-10">
+							<p class="copyright">© TTAGIT social networks inc. All rights reserved.</p>
+						</div>
+						<div class="col-sm-1 col-xs-2 text-right">
+							<a href="#" class="scroll-top"><div class="footer-scrolltop-holder"><span class="ion-ios7-arrow-up footer-scrolltop"></span></div></a>
+						</div>
+					</div><!-- /row -->
+				</div><!-- /container -->
+			</footer><!-- /footer -->
+			<!-- End Footer -->
+
+		</div><!-- /boxed -->
+	</div><!-- /bg boxed-->
+	<!-- End Boxed or Fullwidth Layout -->
+
+	<!-- Javascript Files -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/hover-dropdown.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="js/scrollReveal.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.snippet.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/style-switcher.js"></script>
+	<script type="text/javascript" src="js/activate-snippet.js"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script>
+		var config = {
+		easing: 'hustle',
+		mobile:  true,
+		delay:  'onload'
+		}
+		window.sr = new scrollReveal( config );
+    </script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

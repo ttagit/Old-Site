@@ -1,179 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta charset="utf-8">
+<meta name="description" content="Peer driven comments using Twitter and Facebook, including relative data to the URL permalink.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Leigh Akin">
+<title>TTAGIT</title>
 
-    <title>TTAGIT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ttagit2">
+<meta name="twitter:title" content="TTAGIT - Comments and Sentiments">
+<meta name="twitter:description" content="TTAGIT collects comments and Sentiments relative to the URL">
+<meta name="twitter:image:src" content="http://ttagit.com/images/TTAGIT.png">
 
-    <!-- Custom CSS -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+<meta property="og:title" content="TTAGIT - Comment and Sentiment Engine">
+<meta property="og:site_name" content="TTAGIT">
+<meta property="og:url" content="http://ttagit.com">
+<meta property="og:description" content="TTAGIT collects comments and Sentiments relative to the URL">
+<meta property="og:image" content="http://ttagit.com/images/TTAGIT.png" />
+<meta property="fb:app_id" content="453827841445663">
+<meta property="og:type" content="website">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-</head>
+	<!-- Royal Preloader CSS -->
+	<link rel="stylesheet" type="text/css" href="css/royal_preloader.css">
 
-<body>
+	<!-- jQuery Files -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/default.css">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">TTAGIT</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="http://intigold.com/news/">News</a>
-                    </li>
-                    <li>
-                        <a href="http://intigold.com/#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Full Width Image Header -->
-    <header class="header-image">
-        <div class="headline">
-            <div class="container">
-                <div>
-   <header>
-            <h1 id="headline">TTAGIT</h1>
-        </header>
-        
-
-        <script src="js/jquery-1.7.2.min.js"></script>
-        <script src="js/jquery.fittext.js"></script>
-        <script>
-            //call fitText() function for the element you want to be fluid
-            $("#responsive-header").fitText();
-			
-            //Font-size = 1/10th of the element's width
-        </script>
-        <a class="btn btn-primary btn-lg" href="https://itunes.apple.com/ca/app/ttagit-social-networks-inc/id974194216?mt=8">
-   Download
-</a>
-</div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Page Content -->
-    <div class="container">
-     <h3 align="center">TTAGIT is an extension that allows you to interact with Twitter relevant to any URL that you have opened it on. The extension allows tweeting, replies, retweets and favourites. Put your mark on everything.</h3>
-
-        <hr class="featurette-divider">
-
-        <!-- First Featurette -->
-       
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="images/ttagit_screen1.jpg">
-            <h2 class="featurette-heading">Step
-                <span class="text-muted">1:</span>
-            </h2>
-            <p class="lead">Click the Install link, install at the app store, then open application on your IOS device and login to Twitter.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Second Featurette -->
-        <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="images/ttagit_screen2.jpg">
-            <h2 class="featurette-heading">Step
-                <span class="text-muted">2:</span>
-            </h2>
-            <p class="lead">Go into settings on your IOS device and go to Twitter and allow the TTAGIT application.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="images/ttagit_screen3.jpg">
-            <h2 class="featurette-heading">Step
-                <span class="text-muted">3:</span>
-            </h2>
-            <p class="lead">Open up Safari and head to your favourite webpage, click the share icon and find the TTAGIT action extension and open the application and start Tweeting.</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            </br>
-            <h3>Download Desktop Here</h3><br>
-            
-   <a href="https://chrome.google.com/webstore/detail/ttagit/ijabkockaflfmmcfcpfacclaagfiippe">
-  <img src="images/chromestore.jpg" alt="Google Chrome" style="width:144px;height:40;border:0" align="center">
-</a>
-<a href="safari/ttagit.safariextz">
-  <img src="images/safari.jpg" alt="Safari Direct Download" style="width:127px;height:40px;border:0">
-</a>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-  
-                    <p>Copyright &copy; Ttagit Social Networks Inc. 2015 <a href="privacy_policy.html" target="_blank">Privacy Policy</a> 
-</p>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="jquery.fittext.js"></script>
-	<script>
-	  jQuery("#responsive_headline").fitText();
+	<!-- Royal Preloader -->
+	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+	<script type="text/javascript">
+		Royal_Preloader.config({
+		    mode:       	'number',
+		    showProgress: 	false,
+		    background: 	'#ffffff'
+		});
 	</script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-	
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-           <script>
-               (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-               function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-               e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-               e.src='//www.google-analytics.com/analytics.js';
-               r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-               ga('create','UA-34128429-1','auto');ga('send','pageview');
-           </script>
+	<!-- Stylesheets -->
 
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" title="main-css">
+	<link href="css/bootstrap-social.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet" >
+	<link href="css/jquery.snippet.css" rel="stylesheet">
+	<link href="css/buttons.css" rel="stylesheet">
+	<!-- Icon Fonts -->
+	<link href='css/ionicons.min.css' rel='stylesheet' type='text/css'>
+	<link href='css/font-awesome.css' rel='stylesheet' type='text/css'>
+
+	<!-- Magnific Popup -->
+	<link href='css/magnific-popup.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="royal_preloader scrollreveal">
+
+	<div id="royal_preloader"></div>
+
+	<!-- Begin Boxed or Fullwidth Layout -->
+	<div id="bg-boxed">
+	    <div class="boxed">
+
+			<!-- Begin Header -->
+			<header>
+
+				<!-- Begin Top Bar -->
+				<div class="top-bar">
+					<div class="container container-header">
+						<div class="row top-bar-row">
+							<!-- Address and Phone -->
+							<div class='col-xs-7 col-md-7 col-lg-7 text-left stockquote'>
+								<div class="stockTick">
+								<script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+								<script>
+								$(document).ready(function(){var stock = 'IGD.V';
+								var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + stock + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
+								$.getJSON(url,function(data){
+								var stockInfo = data[0];
+								var stockString = '<b>Symbol:</b> ' + data.query.results.quote.symbol + ' <b>Last:</b> ' + data.query.results.quote.LastTradePriceOnly + ' <b>Bid:</b> ' + data.query.results.quote.Bid + ' <b>Ask:</b> ' + data.query.results.quote.Ask + ' <b>Volume:</b> ' + data.query.results.quote.Volume;
+								var result = stockString.fontcolor("green");
+								$('.stockTick').html('<h5>' + stockString + '</h5>');
+								                });
+								        })
+								        </script>
+							</div>
+							</div>
+							<!-- Social Buttons -->
+							<div class="col-sm-5 text-right topmenu-holder">
+				                <ul class="topbar-list list-inline">
+
+					                <li>
+							            <a class="btn btn-social-icon btn-rw btn-primary btn-xs">
+											<i class="fa fa-twitter"></i>
+										</a>
+										<a class="btn btn-social-icon btn-rw btn-primary btn-xs">
+											<i class="fa fa-google"></i>
+										</a>
+										<a class="btn btn-social-icon btn-rw btn-primary btn-xs">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div><!--/row -->
+					</div><!--/container header -->
+				</div><!--/top bar -->
+				<!-- End Top Bar -->
+<!-- Begin Navigation -->
+				<div class="navbar">
+					<div class="container container-header">
+						<div class="navbar-header">
+							<!-- Brand -->
+							<a href="index.html" class="navbar-brand">
+								<!-- <div class="css-logo"></div> -->
+								<img src="images/logo.png" class="raleway-logo" alt="ttagit social networks inc.">
+							</a>
+							<!-- Mobile Navigation -->
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					            <span class="sr-only">Toggle navigation</span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+							</button>
+						</div><!-- /navbar header -->
+
+						<!-- Main Navigation -->
+						<nav class="navbar-collapse collapse navHeaderCollapse" role="navigation">
+							<ul class="nav navbar-nav navbar-right">
+									<li><a href="http://www.ttagit.com/prelaunch">Home</a></li>
+											<li><a href="http://intigold.com/news/">News Releases</a></li>
+
+								<li><a href="pages-contact-1.html">Contact</a></li>
+								<li class="dropdown">
+			                    	<a href="#" class="dropdown-toggle dropdown-form-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+			                        <ul class="dropdown-menu dropdown-menu-user">
+			                            <li id="dropdownForm">
+			                            	<div class="dropdown-form">
+			                                	<form class="form-default form-inline p15">
+			                                        <div class="input-group">
+			                                            <input type="text" class="form-control search-input" placeholder="Search...">
+			                                            <span class="input-group-btn">
+			                                                <button class="btn btn-rw btn-primary search-btn" type="button">Go!</button>
+			                                            </span>
+			                                        </div><!-- /input group -->
+			                                    </form><!-- /searh form -->
+			                                </div><!-- /dropdown form -->
+			                            </li><!-- /dropdownForm list item -->
+			                        </ul><!-- /search dropdown -->
+			                	</li><!-- /search navbar list item -->
+							</ul><!-- /navbar right -->
+						</nav><!-- /nav -->
+
+					</div><!-- /container header -->
+				</div><!-- /navbar -->
+				<!-- End Navigation -->
+
+			</header><!-- /header -->
+			<!-- End Header -->
+
+			<!-- Begin Carousel -->
+			<div class="carousel">
+				<div id="carouselHome" class="carousel slide carousel-fade" data-ride="carousel">
+					<!-- Begin Wrapper for slides -->
+					<div class="carousel-inner">
+
+						<!-- Begin Item 1 -->
+						<div class="item active">
+							<!-- Item BG -->
+							<div class="background-main"  data-0="background-position:0px 0px;" data-500="background-position:0px -250px;">
+								<div class="container">
+									<div class="row carousel-content center-vertically-right">
+										<!-- Content -->
+										<div class="fadeInRight-animated" data-animation="fadeInRight">
+											<div class="carousel-description col-sm-5">
+												<h3 class="heavy text-white"><span class="carousel-title-bgclear">Put your mark on EVERYTHING</span></h3>
+												<p>TTAGIT is a proprietary technology which allows Internet users to comment, talk and respond over any website (URL) using live feed. By using TTAGIT, users can stay on a webpage and post to their favorite social networks, without ever going to different website's to view or post comments. This is what gives TTAGIT its competitive advantage.</p>
+												<div class="fadeInLeft-animated" data-animation="fadeInLeft">
+													<div style="float: center;">
+														<img alt="logo" src="images/app-store.png" />
+														<img alt="background" src="images/chromebutton-small.png" />
+
+													</div>
+
+											</div>
+										</div>
+										<div class="fadeInLeft-animated" data-animation="fadeInLeft">
+											<div class="col-sm-6 col-sm-offset-1">
+												<img src="images/ttagit-ballon.png" class="img-responsive carousel-image" alt="Responsive Showcase">
+											</div>
+										</div>
+									</div><!-- /content container -->
+								</div><!-- /container -->
+							</div><!-- /bg div -->
+						</div><!-- /item -->
+						<!-- End Item 1 -->
+
+
+
+					</div><!-- /carousel inner -->
+					<!-- End Wrapper for slides -->
+
+					<!-- Controls -->
+
+
+				</div><!-- /carousel id div -->
+			</div><!-- /carousel div -->
+			<!-- End Carousel -->
+
+			<!-- Begin 3 Services -->
+			<div class="pt60 pb60 border-bottom">
+				<div class="container">
+					<div class="row">
+						<!-- Content 1 -->
+						<div class="col-sm-4 fadeInUp-animated text-center">
+						    <span class="ion-social-apple bordered-icon-sm"></span>
+						    <h4 class="mt15">Mobile App</h4>
+						    <p class="p15xs no-margin">Download the ttagit app on any device that suppoerts iOS8 or newer</p>
+						</div>
+						<!-- Content 2 -->
+						<div class="col-sm-4 fadeInUp-animated text-center mt20-xs">
+						    <span class="ion-ios7-world bordered-icon-sm"></span>
+						    <h4 class="mt15">Google Chrome for Desktop</h4>
+						    <p class="p15xs no-margin">Download our desktop browser extension from the chrome store today!</p>
+						</div>
+						<!-- Content 3 -->
+						<div class="col-sm-4 fadeInUp-animated text-center mt20-xs">
+						    <span class="ion-ios7-cloud-download bordered-icon-sm"></span>
+						    <h4 class="mt15">Embedd Button</h4>
+						    <p class="p15xs no-margin">Use our embedd code to add the ttagit technology to your site creating your own realtime commenting board</p>
+						</div>
+					</div>
+				</div><!-- /container -->
+			</div><!-- /cta -->
+			<!-- End 3 Services -->
+
+
+
+			<!-- Begin Carousel + Intro -->
+			<div class="pt40 pb40 border-top">
+				<div class="container">
+					<!-- Begin Carousel + Content -->
+					<div class="row">
+
+						<!-- Begin Carousel -->
+						<div class="col-sm-4" data-sr="enter left">
+							<div id="homeCarousel2" class="carousel slide" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#homeCarousel2" data-slide-to="0" class="active"></li>
+									<li data-target="#homeCarousel2" data-slide-to="1"></li>
+									<li data-target="#homeCarousel2" data-slide-to="2"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
+									<div class="item active">
+										<div style="background-image:url('images/ttagit1.jpg'); height:260px;"></div>
+									</div>
+									<div class="item">
+										<div style="background-image:url('images/ttagit2.jpg'); height:260px"></div>
+									</div>
+									<div class="item">
+										<div style="background-image:url('images/ttagit3.jpg'); height:260px"></div>
+									</div>
+								</div>
+
+								<!-- Controls -->
+								<a class="left carousel-control" href="#homeCarousel2" role="button" data-slide="prev">
+									<span class="ion-ios7-arrow-left carousel-arrow-left" aria-hidden="true"></span>
+								</a>
+								<a class="right carousel-control" href="#homeCarousel2" role="button" data-slide="next">
+									<span class="ion-ios7-arrow-right carousel-arrow-right" aria-hidden="true"></span>
+								</a>
+							</div>
+						</div><!-- /column -->
+						<!-- End Carousel -->
+
+						<!-- Content Inside -->
+						<div class="col-sm-8">
+							<div class="heading mb20 mt30-xs"><h4><span class="ion-information-circled mr15"></span>Installing TTAGIT iOS App</h4></div>
+							<p>Tap App Store on your iPhone, iPad, or iPod Touch to browse and buy apps on your iOS device.</p>
+							<p>To buy apps, you need an Apple ID. If you don't have one, you can create an Apple ID in iTunes, or on your iPhone, iPad, or iPod touch.</p>
+							<!-- List -->
+							<ul class="list-arrow-2-color no-margin">
+							    <li><small>Click the Install link, install at the app store, then open application on your IOS device and login to Twitter. </small></li>
+							    <li><small>Go into settings on your IOS device and go to Twitter and allow the TTAGIT application.</small></li>
+							    <li><small>Open up Safari and head to your favourite webpage, click the share icon and find the TTAGIT action extension and open the application and start Tweeting.</small></li>
+
+							</ul>
+						</div><!-- /column -->
+						<!-- End Content Inside -->
+
+					</div><!-- /row -->
+					<!-- End Carousel + Content -->
+
+				</div><!-- /container -->
+			</div><!-- /content -->
+			<!-- End Carousel + Intro -->
+
+			<!-- Begin Recent Work + Clients -->
+			<section class="pt40 mb40 border-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="heading mb30">
+								<h4><span class="ion-android-settings mr15"></span>Create an embed button</h4>
+								<section class="button-customize">
+<div class="row text-center">
+<div class="columns">
+<div class="embed-button-step row">
+<div class="columns">
+
+
+<div class="embed-button-step row">
+	<div class="medium-8 medium-centered columns">
+		<div class="row">
+			<p><br>
+			Put a Ttagit button directly into your website creating your own commenting with sentiments on your webpages
+			</p>
+	 		<div class="col-lg-12">
+	 			<b>Button Embed Code</b><br>
+	 			<button id="text-to-copy" style="margin-bottom:20px;padding-bottom:20px;"class="btn btn-primary" data-clipboard-text="<script>(function(d, s, id){var js,div, tjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s);js.id = id;div = d.createElement('div');div.id='ttagit';js.src = 'https://ttagit.org/secure/latest.min.js';tjs.parentNode.insertBefore(js, tjs);if(!d.getElementById('ttagit')) d.getElementsByTagName('body')[0].appendChild(div);}(document, 'script', 'ttagitSdk'));</script><div id='ttagit'></div>">Click To Copy</button>
+
+	 			<pre>
+	 				<code class="javascript">&#60;script type="text/javascript"&#62;(function(d, s, id){var js,div, tjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s);js.id = id;div = d.createElement('div');div.id='ttagit';js.src = "https://ttagit.org/secure/latest.min.js";tjs.parentNode.insertBefore(js, tjs);if(!d.getElementById('ttagit')) d.getElementsByTagName('body')[0].appendChild(div);}(document, 'script', 'ttagitSdk'));&#60;/script&#62;&#60;div id='ttagit'&#62;&#60;/div&#62;
+	 				</code>
+	 			</pre>
+  			</div>
+
+  			<div class="col-lg-12">
+  				<div id='ttagit'></div>
+  				<script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  				<script type="text/javascript">
+  					$(document).ready(function(){
+						// The link with ID "copy-description" will copy
+						// the text of the paragraph with ID "description"
+						$('button#text-to-copy').zclip({
+							path:'js/ZeroClipboard.swf',
+							copy:function(){
+								return $('button#text-to-copy').attr('data-clipboard-text');
+							}
+						});
+						// The link with ID "copy-dynamic" will copy the current value
+						// of a dynamically changing input with the ID "dynamic"
+					});
+				</script>
+
+			</div>
+			<p>
+				<em>See how it works! Just click the TTAGIT button above for a demonstation</em>
+			</p>
+</div>
+</div>
+</div>
+</section>
+
+				</div><!-- /container -->
+			</section><!-- /section -->
+			<!-- End Recent Work + Clients -->
+
+			<!-- Begin Footer -->
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<!-- About -->
+						<div class="col-sm-3">
+							<div class="heading-footer"><h4>Get Updates</h4></div>
+							<form action="//formspree.io/gradyflinn@gmail.com"
+      method="POST">
+    <input type="text" Value="Your Name" name="name"><br>
+    <input type="email" Value="Your Email" name="_replyto">
+    <input type="submit" value="Send">
+</form>
+						</div>
+
+						<!-- Social -->
+						<div class="col-sm-3 mg25-xs">
+							<div class="heading-footer"><h4>Social Networks</h4></div>
+							<div class="col-xs-2 recent-work-padding">
+							<a href="https://www.facebook.com/TTAGIT" class="">
+									<img src="images/facebook.png" alt="" class="thumbnail img-responsive">
+								</a>
+								</div>
+
+								<div class="col-xs-2 recent-work-padding">
+								<a href="https://twitter.com/ttagit2" class="">
+										<img src="images/twitter.png" alt="Connect With Twitter" class="thumbnail img-responsive">
+									</a>
+									</div>
+
+									<div class="col-xs-2 recent-work-padding">
+									<a href="https://plus.google.com/110453260789347404118/posts" class="">
+											<img src="images/googleplus.png" alt="Connect With Google Plus" class="thumbnail img-responsive">
+										</a>
+										</div>
+
+
+						</div>
+
+						<!-- Contact -->
+						<div class="col-sm-3 mg25-xs">
+							<div class="heading-footer"><h4>Contact us</h4></div>
+
+							<p><span class="ion-home footer-info-icons"></span><small class="address">304-700 Pender St W,Vancouver,BC</small></p>
+								<p><span class="ion-home footer-info-icons"></span><small class="address">Canada, V6C 1G8</small></p>
+							<p><span class="ion-email footer-info-icons"></span><small class="address">cathyforhane@gmail.com</small></p>
+
+						</div>
+
+						<script type="text/javascript">
+(function(d, s, id){
+var js,div, tjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) {return;}
+js = d.createElement(s);js.id = id;
+div = d.createElement('div');div.id='ttagit';
+js.src = "https://ttagit.org/secure/latest.min.js";
+tjs.parentNode.insertBefore(js, tjs);
+if(!d.getElementById('ttagit')) d.getElementsByTagName('body')[0].appendChild(div);
+}(document, 'script', 'ttagitSdk'));
+</script>
+
+						<!-- Recent Work -->
+						<div class="col-sm-3 mg25-xs">
+							<div class="heading-footer"><h4>TTagit Downloads</h4></div>
+							<div class="col-xs-3 recent-work-padding">
+								<a href="https://itunes.apple.com/ca/app/ttagit-social-networks-inc/id974194216?mt=8" class="">
+							      <img src="images/applelogo.png" alt="Download for iOS" class="thumbnail img-responsive">
+							    </a>
+							</div>
+							<div class="col-xs-3 recent-work-padding">
+								<a href="https://chrome.google.com/webstore/detail/ttagit/ijabkockaflfmmcfcpfacclaagfiippe" class="">
+							      <img src="images/chromelogo.png" alt="Download for Google Chrome" class="thumbnail img-responsive">
+							    </a>
+							</div>
+							<div class="col-xs-3 recent-work-padding">
+								<a href="https://ttagit.org/safari/ttagit.safariextz" class="">
+							      <img src="images/safaributton.png" alt="Download for Safari Desktop" class="thumbnail img-responsive">
+							    </a>
+							</div>
+						</div>
+					</div><!-- /row -->
+
+					<!-- Copyright -->
+					<div class="row">
+						<hr class="dark-hr">
+						<div class="col-sm-11 col-xs-10">
+							<p class="copyright">© TTAGIT social networks inc. All rights reserved.</p>
+						</div>
+						<div class="col-sm-1 col-xs-2 text-right">
+							<a href="#" class="scroll-top"><div class="footer-scrolltop-holder"><span class="ion-ios7-arrow-up footer-scrolltop"></span></div></a>
+						</div>
+					</div><!-- /row -->
+				</div><!-- /container -->
+			</footer><!-- /footer -->
+			<!-- End Footer -->
+
+		</div><!-- /boxed -->
+	</div><!-- /bg boxed-->
+	<!-- End Boxed or Fullwidth Layout -->
+
+	<!-- Javascript Files -->
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/hover-dropdown.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="js/scrollReveal.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript" src="js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+    <script>
+		var config = {
+		easing: 'hustle',
+		mobile:  true,
+		delay:  'onload'
+		}
+		window.sr = new scrollReveal( config );
+    </script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
-
 </html>
